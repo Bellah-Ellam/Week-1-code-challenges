@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payroll Calculator</title>
+    <script src="payroll.js"></script>
+    <link rel="stylesheet" href="payroll.css">
+  </head>
+  <body>
+    <h1>Payroll Calculator</h1>
+    <form>
+      <label for="basic-salary">Basic Salary:</label>
+      <input type="number" id="basic-salary" name="basic-salary">
+      
+      <label for="benefits">Benefits:</label>
+      <input type="number" id="benefits" name="benefits">
+      
+      <button type="button" onclick="calculatePayroll()">Calculate</button>
+    </form>
+    
+    <div id="results">
+      <h2>Payroll Results</h2>
+      <p><span>Payee Tax:</span> <span id="payee-tax"></span></p>
+      <p><span>NHIF Deduction:</span> <span id="nhif-deduction"></span></p>
+      <p><span>NSSF Deduction:</span> <span id="nssf-deduction"></span></p>
+      <p><span>Net Salary:</span> <span id="net-salary"></span></p>
+    </div>
+  </body>
+</html>

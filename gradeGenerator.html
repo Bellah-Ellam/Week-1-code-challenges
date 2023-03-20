@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>student calculate</title>
+    <!-- link for font  -->
+    <link
+      href= "https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="gradeGenerator.css" />
+  </head>
+  <body>
+    <!-- main html  -->
+    <div class="container">
+      <h1>Student Grade Generator</h1>
+      <div class="screen-body-item">
+        <div class="app">
+          <div class="form-group">
+            <!-- option for taking the input -->
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Please enter Student marks"
+              id="marks"
+            />
+          </div>
+          
+          
+          <div>
+            <input
+              type="button"
+              value="Your Grade"
+              class="form-button"
+              onclick="myGrading()"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- for showing the result-->
+      <div class="form-group showdata">
+        <p id="showdata"></p>
+      </div>
+    </div>
+    <!--adding external javascript file-->
+    <script src="gradeGenerator.js"></script>
+  </body>
+</html>
